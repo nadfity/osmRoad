@@ -88,6 +88,10 @@ def parse_way(root):
             continue
         if tags['highway'] not in road_vals:
             continue
-        ways.append((nodes, tags))
+        ways.append({
+            "id": way.attrib['id'],
+            "nodes": nodes,
+            "tags": tags,
+        })
     return ways
 
