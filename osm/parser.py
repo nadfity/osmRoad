@@ -56,7 +56,7 @@ def parse_bound(root):
 def parse_nodexy(root):
     nodes = {}
     for node in root.findall('node'):
-        nodes[int(node.attrib['id'])] = (float(node.attrib['lon']), float(node.attrib['lat']))
+        nodes[int(node.attrib['id'])] = (float(node.attrib['lat']), float(node.attrib['lon']))
     return nodes
 
 
