@@ -26,4 +26,6 @@
 # OF THIS SOFTWARE.
 # --------------------------------------------------------------------
 
-name = "osmRoad"
+name = "osmRoad-nadfity"
+__version__ = "0.2.1a0"
+
